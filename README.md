@@ -61,7 +61,7 @@ See the directions outlined above, or check out the direction on the plugin's se
 
 This plugin supports the [GitHub Updater](https://github.com/afragen/github-updater) plugin, so if you install that, this plugin becomes automatically updateable direct from GitHub.
 
-### Credit Roll
+## Credit Roll
 
 Flickr by Albums could not have been made possible without:
 
