@@ -11,13 +11,13 @@ Display thumbnail galleries of Flickr albums in your WordPress posts or pages us
 
 == Description ==
 
-Display thumbnail-style galleries of complete Flickr albums using a simple shortcode in a WordPress post or page.
+Display thumbnail-style galleries of complete Flickr albums using a simple shortcode in your WordPress posts or pages.
 
 Some features:
 
-- Works with Flickr's SSL-only API (non-SSL API deprecated on June 27, 2014)
-- Create large (150px) or small (72px) square thumbnail galleries
-- Add a class to the link that wraps the thumbnails to do nifty things like lightbox the full version of the image when the user clicks it
+- Works with Flickr's SSL-only API (non-SSL API deprecated on June 27, 2014).
+- Create large (150px) or small (72px) square thumbnail galleries.
+- Add a class to the link that wraps the thumbnails to do nifty things like lightbox the full version of the image when the user clicks it.
 
 Shortcode Usage Instructions:
 
@@ -34,9 +34,9 @@ Please note:
 
 = Using FTP =
 
-1. Download and extract the `flickr-by-albums-master.zip` and remove -master from the extracted directory name
-2. Upload the `flickr-by-albums` folder and its contents to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
+1. Download and unzip `flickr-by-albums-master.zip` and remove "-master" from the directory name.
+2. Upload the `flickr-by-albums` folder and its contents to the `/wp-content/plugins/` directory.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
 4. Go to the Settings > Flickr by Albums page and adjust the settings as needed.
 
 == Frequently Asked Questions ==
