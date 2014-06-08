@@ -7,7 +7,7 @@ Display thumbnail-style galleries of complete Flickr albums using a simple short
 Some features:
 
 - Works with Flickr's SSL-only API (non-SSL API deprecated on June 27, 2014).
-- Create large (150px) or small (72px) square thumbnail galleries.
+- Create large (150px) or small (75px) square thumbnail galleries.
 - Add a class to the link that wraps the thumbnails to do nifty things like lightbox the full version of the image when the user clicks it.
 
 **Shortcode Usage Instructions:**
