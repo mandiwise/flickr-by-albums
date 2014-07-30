@@ -10,7 +10,7 @@
  * Plugin Name:       Flickr by Albums
  * Plugin URI:        http://mandiwise.com/project/flickr-by-albums/
  * Description:       Display thumbnail-style galleries of complete Flickr albums using a simple shortcode in a WordPress post or page.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Mandi Wise
  * Author URI:        http://mandiwise.com/
  * Text Domain:       flickr-by-albums

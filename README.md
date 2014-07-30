@@ -54,7 +54,11 @@ See the directions outlined above, or check out the direction on the plugin's se
 
 ## Changelog
 
-= 1.0 =
+### 1.0.1
+* Update phpFlickr library to v3.1.1
+* Only load plugin stylesheet where required
+
+### 1.0
 * Initial release.
 
 ## Updates

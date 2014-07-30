@@ -17,7 +17,7 @@ class Flickr_by_Albums {
 	 * @since   1.0.0
 	 * @var     string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * The text domain for internationalizing strings of text.
@@ -46,9 +46,8 @@ class Flickr_by_Albums {
 		// Load plugin text domain
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
-		// Load public-facing style sheet and JavaScript.
+		// Load public-facing style sheet.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
-		//add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
       // Initiate the plugin settings class so we can use what's saved in those options.
       require_once( FBA_DIR . '/admin/views/settings.php' );
@@ -205,21 +204,14 @@ class Flickr_by_Albums {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'assets/css/public.css', __FILE__ ), array(), self::VERSION );
-	}
 
-	/**
-	 * Register and enqueues public-facing JavaScript files.
-	 *
-	 * @since    1.0.0
-	 */
+		global $post;
 
-	/*
-	public function enqueue_scripts() {
-		@TODO...
-		wp_enqueue_script( $this->plugin_slug . '-plugin-script', plugins_url( 'assets/js/public.js', __FILE__ ), array( 'jquery' ), self::VERSION );
+		if ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'flickr-album') ) {
+			wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'assets/css/public.css', __FILE__ ), array(), self::VERSION );
+		}
+
 	}
-	*/
 
 	/**
 	 * Public-facing functions.
